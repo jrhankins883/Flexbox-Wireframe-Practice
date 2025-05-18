@@ -17,7 +17,7 @@ header {
     width: 20rem;
 }
 
-article {
+section {
     font-size: 2rem;
     padding: 1.5rem;
     text-align: center;
@@ -70,4 +70,63 @@ footer {
     margin: 1rem auto;
     max-width: 800px;
     width: 20rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header,
+  footer {
+    width: 100%;
+    max-width: none;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  .middle-row {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0.5rem;
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  section {
+    flex: 3;
+    max-width: 75%;
+    background-color: green;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  .article1,
+  .article2,
+  .article3 {
+    width: 85%;
+    margin: 1rem 0; /* spacing between section edges and articles */
+    background-color: red;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  aside {
+    flex: 1;
+    max-width: 20%;
+    background-color: blue;
+    color: white;
+    border-radius: 12px;
+    padding: 1rem;
+  }
 }
